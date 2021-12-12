@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/stylesheet.css">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href= "assets/images/beer_PNG2347.png"/>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+    <title>Brew Hops!</title>
+    </head>
+<body>
+    <div>
+    <header class="hero">
+        <h1 class="text-center p-4">
+            <i class="fas fa-beer"></i>
+            Brew Hops!
+        </h1>
+        <div class="container p-3 input-container">
+            <h3 class="text-center">
+                Where are you?
+            </h3>
+            <div class="input-group mb-3">
+                <input id="userAddress" type="text" class="form-control" placeholder="User Address" aria-label="User Address" aria-describedby="basic-addon2">
+
+                <div class="input-group-append">
+                  <button class="input-group-text" id="search-button">Search</button>
+                </div>
+            </div>
+            <div id="address-verify" class="col d-flex text-center">
+        </div>
+    </header>
+    <!-- <div id="address-verify" class="col d-flex justify-content-center"> -->
+
+    </div>
+    <div class= "row min-vh-100 no-gutters">
+        <!-- Left side list and search  -->
+
+        <main class="row min-vh-100 no-gutters">
+            <div class="col d-flex flex-column p-lg-3 overflow-auto min-vh-100" id="btnDiv">
+                <h3 class="text-center">
+                    Where do you want to go?
+                    <!-- <br>
+                    Breweries in Salt Lake -->
+                </h3>
+                <!-- <div style="display: flex;">
+                    <button id="route-btn" class="route-me-btn">Route Me!</button>
+                </div> -->
+                <li class="m-2">
+               
+                </li>
+                <!-- same as above but more condensed -->
+                <!-- <li class="m-2"><button class="btn btn-secondary p-1"><ul>bar option1</ul></button></li>
+                <li class="m-2"><button class="btn btn-secondary p-1"><ul>bar option1</ul></button></li>
+                <li class="m-2"><button class="btn btn-secondary p-1"><ul>bar option1</ul></button></li>
+                <li class="m-2"><button class="btn btn-secondary p-1"><ul>bar option1</ul></button></li>
+                <li class="m-2"><button class="btn btn-secondary p-1"><ul>bar option1</ul></button></li>
+                <li class="m-2"><button class="btn btn-secondary p-1"><ul>bar option1</ul></button></li> -->
+            </div>
+        </main>
+
+        <!-- right side map area -->
+
+
+        <!-- <div class="map col container d-flex align-items-center justify-content-center m-0"> -->
+            <article class="map col container d-flex align-items-start flex-column justify-content-center">
+
+
+                <button id="route-btn" class="route-me-btn text-center p-3">Route Me!</button>
+            <!-- card posistioning -->
+            <br>
+                <div class="card" style="width: 95%; height:60%">
+                    <div id="map" class="card-body ">
+                    </div>
+                </div>
+            </article>
+
+</div>
+    <footer class="footer">
+        <h2 class="app-title text-center  p-4">
+            <ul>
+                <li>
+                    &copy;2021    
+                </li>
+                <li>
+                    Sabriel Gee
+                </li>
+                <li>
+                    Jason Wisniewski
+                </li>
+            </ul>
+        </h2>
+    </footer>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
