@@ -151,7 +151,6 @@ function chosenBrewery(event) {
   console.log(breweryAddress);
     brewLatLonArray.push(latLon);
     console.log(brewLatLonArray);
-    //   directions(latLon, startingPoint);
   console.log(startingPoint);
 }
 
